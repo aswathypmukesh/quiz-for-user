@@ -1,0 +1,30 @@
+body {
+    font-family: "Lato", sans-serif; 
+  }
+
+  .page {
+    position: relative;
+    background: #FFFFFF;
+    max-width: 400px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+
+.page h1 {
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.page button {
+    font-family: "Lato", sans-serif;
+    background: #899e74;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    margin: 0 0 5px 60px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+  }

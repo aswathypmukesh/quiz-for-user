@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entry</title>
+</head>
+<body >
+    <div class="page">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style/home.css' %}">
+        <form action="" method="POST" class="form">
+            {% csrf_token %}
+            <h1>Result</h1>
+            <img class="card-img-top" src="http://kmit.in/emagazine/wp-content/uploads/2018/02/karnataka-results.jpg" alt="Card image cap">           
+            <h5>score: {{total}} </h5>
+            
+        </form>  
+    </div>
+</body>
+</html>
