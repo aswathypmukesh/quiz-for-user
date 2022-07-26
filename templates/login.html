@@ -10,15 +10,24 @@
     <div class="page">
         {% load static %}
         {% block content %}
-        <div class="container jumbotron">
             <form method="POST" action="">
-                {% csrf_token %}
-                <p><input type="text" name="username" placeholder="Username..."></p>
-                <p><input type="password" name="password" placeholder="Password..." ></p>
-                <input class="btn btn-success" type="submit" value="Login">
-                <p>Do not have an account<a href='{% url 'register' %}'>Register</a></p>
+            {% csrf_token %}
+                <div class="container">
+                  <h1 class="text-center wow fadeInUp">LOGIN FORM</h1>
+            
+                  <form class="main-form">
+                    <div class="row mt-5 ">
+                      <div class="col-5 col-sm-5 py-2 wow fadeInLeft">
+                        <input type="text"class="form-control" name="username" placeholder="Username..."required>
+                      </div>
+                      <div class="col-5 col-sm-5 py-2 wow fadeInRight">
+                        <input type="password" class="form-control" name="password" placeholder="Password..." required>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 wow zoomIn">LOGIN</button>
+                    <br></br><p>Do not have an account?<a href='{% url 'register' %}'>Register</a></p>
+                </div
             </form>
-        </div>
         {% endblock %} 
     </div>
 </body>
